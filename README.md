@@ -10,17 +10,16 @@ In the settings, add an MCP server using the following command:
 figma-mcp --figma-api-key=your_figma_key
 Alternatively, create a .cursor/mcp.json file in your project with the following content:
 
-json 
-{
+
   "mcpServers": {
     "figma-python": {
       "command": "figma-mcp",
       "args": [
         "--figma-api-key=your_figma_key"
-      ]
     } 
   }
 }
+
 🖥️ Configuration for Other IDEs (e.g., Windsurf)
 Use an MCP configuration file (e.g., mcp_config.json):
 
@@ -32,7 +31,6 @@ json
       "args": [
         "--figma-api-key=your_figma_key"
       ]
-      
     } 
   }
 }
