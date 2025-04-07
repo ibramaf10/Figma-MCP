@@ -1,29 +1,22 @@
-🚀 Quick Installation with pipx
-Install figma-mcp by running:
+# Figma MCP Python
 
 
+## Quick Installation with pipx
+
+```bash
 pipx install figma-mcp
-⚙️ Configuration for Cursor
-In the settings, add an MCP server using the following command:
+```
 
- 
+### For Cursor:
+
+1. In settings, add an MCP server using the command:
+```shell
 figma-mcp --figma-api-key=your_figma_key
-Alternatively, create a .cursor/mcp.json file in your project with the following content:
+```
 
+2. OR Add a `.cursor/mcp.json` file in your project:
 
-  "mcpServers": {
-    "figma-python": {
-      "command": "figma-mcp",
-      "args": [
-        "--figma-api-key=your_figma_key"
-    } 
-  }
-}
-
-🖥️ Configuration for Other IDEs (e.g., Windsurf)
-Use an MCP configuration file (e.g., mcp_config.json):
-
-json 
+```json
 {
   "mcpServers": {
     "figma-python": {
@@ -34,17 +27,34 @@ json
     } 
   }
 }
-🔧 Install uv and Set Up the Environment
-Run the following commands:
+```
 
- 
+
+### For other IDEs like Windsurf, use an MCP configuration file (e.g., `mcp_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "figma-python": {
+      "command": "figma-mcp",
+      "args": [
+        "--figma-api-key=your_figma_key"
+      ]
+    } 
+  }
+}
+```
+
+
+## Install uv and set up the environment
+```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv venv
 source .venv/bin/activate
 uv sync
-🧪 Test Locally
-Run the server with:
+```
 
-
- 
+## Test locally
+```bash
 python -m figma_mcp.main
+```
