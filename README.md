@@ -32,6 +32,7 @@ json
       "args": [
         "--figma-api-key=your_figma_key"
       ]
+      
     } 
   }
 }
@@ -46,11 +47,6 @@ uv sync
 🧪 Test Locally
 Run the server with:
 
-create .env
-
-go get your figma api key
-
-FIGMA_API_TOKEN=
 
  
 python -m figma_mcp.main
