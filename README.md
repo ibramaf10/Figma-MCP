@@ -1,6 +1,5 @@
 # Figma MCP Python
-
-
+Credits to JayZeeDesignn
 ## Quick Installation with pipx
 
 ```bash
